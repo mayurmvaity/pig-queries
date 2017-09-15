@@ -1,0 +1,10 @@
+pig -x local -p input=sample.txt -f niit22.pig
+
+
+pig -p input=/niit/sample.txt -f niit22.pig
+
+
+pig -p input1=/niit/Sept15th/datafiles/txns1.txt -p input2=/niit/Sept15th/datafiles/custs.txt -p output=/niit/Sept15th/opfiles/niit20opPara -f niit20param.pig
+
+
+pig -x local -param_file parameter.txt -f niit20.pig
